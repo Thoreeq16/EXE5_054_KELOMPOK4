@@ -19,5 +19,22 @@ namespace Exe5
             Thoriq = null;
             Hidayatullah = null;
         }
+        public void insert()
+        {
+            string k;
+            Node newnode = new Node();
+            Console.WriteLine("Masukan Element: ");
+            k = Console.ReadLine();
+            newnode.name = k;
+            newnode.next = null;
+            if (Thoriq == null)
+            {
+                Thoriq = newnode;
+                Hidayatullah = newnode;
+                return;
+            }
+            Thoriq.next = newnode;
+            Hidayatullah = newnode;
+        }
     }
 }
