@@ -59,4 +59,10 @@ namespace Exe5
                 Console.WriteLine(display.name);
         }
     }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+        }
+    }
 }
