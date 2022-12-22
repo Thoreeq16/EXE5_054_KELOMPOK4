@@ -36,5 +36,16 @@ namespace Exe5
             Thoriq.next = newnode;
             Hidayatullah = newnode;
         }
+        public void delete()
+        {
+            if (Thoriq == null)
+            {
+                Console.WriteLine("Queue is Empty!!");
+                return;
+            }
+            Thoriq = Thoriq.next;
+            if (Thoriq == null)
+                Hidayatullah = null;
+        }
     }
 }
