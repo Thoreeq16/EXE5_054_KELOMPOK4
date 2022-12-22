@@ -47,5 +47,16 @@ namespace Exe5
             if (Thoriq == null)
                 Hidayatullah = null;
         }
+        public void display()
+        {
+            if (Thoriq == null)
+            {
+                Console.WriteLine("Queue is Empty!!");
+                return;
+            }
+            Node display;
+            for (display = Thoriq; display != null; display = display.next)
+                Console.WriteLine(display.name);
+        }
     }
 }
